@@ -1,0 +1,1764 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:label>HAS SITE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE">
+        <rdfs:comment>it represent the register of all the people having a role in the company</rdfs:comment>
+        <rdfs:label>AFFILIATED PEOPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AGRICOLUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AGRICOLUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreaCruciani"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricolus  is  a  startup  that  develops  solutions  for  Smart   Farming.   The   mission   is   support   farms   in   simplifying   and   enhancing   the   work   on   field   by   using   innovative   technologies   of   data   collection   and  analysis.  The  core  of  the  company  is  a  cloud  platform  composed  of  several  applications:  forecast  models,   remote   sensing,   crop   scouting,   Decision   Support  Systems.  Agricolus  spreads  Agtech  culture  by promoting an Academy addressed to farmers and professionals.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27b7</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AITALENTUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AITALENTUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmparoRoca,ChiefOperatingOfficer"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial    Intelligence    Talentum    is    an    innovative    technology-based  company  specialised  in  artificial  intelligence,  machine  learning  and  high  performance  computing.   Experts   in   algorithm   development   for   simulation and predicting functions, providing insights to   improve,   ease   and   accelerate   decision   making   processes.  With  proven  experience  in  raw  materials  prices, electricity market, biotechnology and industry trough  full-stack  solutions  to  make  the  most  of  the  data generated in your company.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27b8</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ANALYTICSENGINES -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ANALYTICSENGINES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScottFischaber,ChiefOperatingOfficer"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combining    market-leading    technology    and    deep    commercial   experience,   Analytics   Engines   is   the   trusted  data  analytics  partner  to  customers  across  industry  and  the  public  sector.  Our  data  solutions  reduce  complexity,  optimise  performance  and  build  intelligence.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27bc</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Abir-JeanMehawej -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Abir-JeanMehawej">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BeYou"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AgriMarketplace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AgriMarketplace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TiagoPessoa,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agri Marketplace, is a B2B cloud-based digital marketplace company that specializes in utilizing e-commerce and food traceability with blockchain to create more efficiency and transparency in food distribution and along different channels of the AgriFood sector. Our technology facilitates the matching of supply and demand over specific agricultural markets making our digital platform an easier, faster and more transparent process of buying and selling agri-products.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27b6</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Alberts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Alberts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GlennMathijssen,Co-CEO&amp;CTO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberts  makes  healthy  food  accessible  to  anyone,  anywhere, at any time. The Alberts Smoothie Station combines  robotics  and  AI,  to  prepare  personalised,  100%  natural  smoothies  on  the  spot.  Each  smoothie  contains  frozen  fruit  and  veggies,  and  only  water  is added. Our mobile app will soon be giving you food  recommendations  personalised  to  your  needs  and daily rhythm. Alberts is currently also running first  tests  with  a  Soup  Station  to  complement  the  smoothies.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27b9</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AlephFarms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AlephFarms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YoavReisler,ExternalRelationsManager"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aleph  Farms  is  a  pioneer  in  the  field  of  cultivated  meat,  working  passionately  to  grow  delicious,  real  beef  steaks  from  the  cells  of  cows.  Aleph  Farms’  steaks  have  the  same  taste,  texture  and  nutritional  profile  as  conventional  steaks,  but  are  safely  grown  without any harm to animals and with far less impact on the environment. The company works on providing unconditional  access  to  safe  and  nutritious  meat  to  anyone, anytime, anywhere.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27ba</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmaiProteins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmaiProteins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlanSamish,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amai Proteins is the Tasty Designer Protein Company, curing our food and beverage system, one protein at a time. The first focus are sweet designer proteins as a mainstream sugar substitute, with the sweetest protein  in  the  world.  The  protein  has  a  sugar-like  taste,  high  stability  and  shelf  life  and  good  synergy  with other sweeteners e.g. Stevia.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27bb</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreaCruciani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreaCruciani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AGRICOLUS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AntonioDelCasale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AntonioDelCasale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MICROBION"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BeYou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BeYou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Abir-JeanMehawej"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BeYou   health   coach   is   helping   consumers   in   the   pursuit of complete wellness through the creation of mobile apps and AI driven health &amp; wellness solutions.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27be</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BenoîtBriault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BenoîtBriault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Thegreendata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BetterOrigin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BetterOrigin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MihaPipan"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Better Origin closes the food waste loop by transforming organic  waste  into  sustainable  agricultural  inputs,  using  an  insect  called  the  Black  Soldier  Fly  (BSF)  as   a   conversion   catalyst.   BSF   larvae   efficiently   convert  95%  of  organic  waste  into  complex  fats  and  proteins  in  their  bodies.  Leveraging  our  novel  post-processing  technology,  we  refine  these  compounds  into aquaculture feed and organic fertiliser in a cheap, scalable  and  sustainable  manner.  Overall,  this  is  an  innovative way of turning waste material into a set of valuable, sustainable resources.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27bd</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <PARTECIPATE rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Bevacqua_Antonio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BrijSahi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BrijSahi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SwissDeCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Clevabit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Clevabit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HubertusWasmer,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clevabit develops a hard- and software platform with a vast variety of sensors to capture data on farms and correlates them in order to increase animal welfare, decrease the use of medication (antibiotics) and increase the profitability of farmers. Currently, we are active mostly in Germany and the Netherlands. In addition, we are capturing filling states of feed silos in order to improve logistics and thereby reducing CO2-pollution for food producers.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27bf</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Comerso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Comerso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrançoisVallée"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comerso inspires &amp; helps organisations to accelerate towards Circular Economy, for a fairer and more responsible world. Comerso is a French company. Our activity is 100% B2B. Our platform helps businesses to add value to their unsold goods &amp; waste. Our solutions deliver a triple CSR positive impact; economic, social &amp; environmental.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c0</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ConnectingFood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ConnectingFood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ColineLaurent–Marketing&amp;CommunicationOfficer"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connecting Food helps brands regain consumer trust, bringing total transparency to their food-chains.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c1</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DeepPlanet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DeepPlanet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SushmaShankar,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Planet aims to catalog, track and forecast the world&apos;s agricultural production. Our predictive crop analytic platform combines machine learning, satellite imagery, and agricultural data to help supply chain companies and farmers to make better decisions. We predict soil moisture, soil nitrogen, yield, crop/tree detection, organic/non-organic crop detection, deforestation, regeneration at 90+% accuracy. Supported by the University of Oxford and European Space Agency.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c2</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DouxMatok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DouxMatok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EranBaniel,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DouxMatok has developed a platform of technologies making  flavour  delivery  more  efficient,  allowing  for  sugar-based  sugar  reduction  with  no  after-tastes.  Our  Incredo™  sugars  facilitate  a  reduction  over  40%  while  providing  100%  sweetness,  great  delights  and  better  nutrition  in  applications  such  as  baked  goods,  chocolates,  spreads  and  cereal  bars.  DouxMatok  is  scaling up production in Europe with SuedZucker and in  the  USA  with  NA  partners  and  will  commercialise  as of Q2 2019. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c3</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DryGro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DryGro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SeanPeters,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DryGro is an agriculture technology company working on new ways to produce an animal feed protein ingredient called Lemna. We are producing this ingredient as an alternative to soybean meal. We can produce 8x faster than soybean meal, using 99% less water, without the requirement for arable land. This allows us to significantly undercut the current value chain by producing close to consumption, much more sustainably.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c4</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DurrowMills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DurrowMills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LisaLarkin,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Durrow Mills is an innovative Irish ingredients company supplying organic sprouted flours to the baking industry. Producing sprouted grains, seeds, legumes and nuts are the main focus of R&amp;D in our company and how they can provide a highly digestible and nutritious addition to existing foods in our diet. We have developed a range of 6 sprouted flours that are supplied to both retail and trade customers in Ireland and the UK.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c5</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELEA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELEA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ClaudiaSiemer,R&amp;DManager"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We  are  the  leading  supplier  of  Pulsed  Electric  Field  (PEF)  systems  to  the  food,  beverage  and  scientific  sector  worldwide.  We  design,  build  and  install  PEF  equipment  suitable  for  a  wide  range  of  applications  and outputs.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c7</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ENERGYPULSESYSTEMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ENERGYPULSESYSTEMS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcosPereira"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy  Pulse  Systems  (EPS)  researches,  develops,  produces and sells pulsed power modulators based on  state-of-the-art,  high  efficient  semi-conductors,  assembled    in    very    flexible    and    modular    Marx    topologies which are designed to add value to several industrial  sectors  such  as  Food,  Feed,  Microbiology,  CleanTech, Oil &amp; Gas, Automotive and Health.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c8</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EagleGenomics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EagleGenomics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CatherineKidd,DirectorOfMarketing"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eagle  Genomics  aims  to  advance  data  science,  drive  scientific  discovery  in  the  fields  of  human  genomics  and  microbiomics  and  equip  our  customers  to  solve  some of the world’s biggest health and environmental challenges.    Ultimately,    we    want    our    software    solutions to improve lives and enable the creation of sustainable solutions.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c6</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Essento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Essento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ChristianBärtsch,Founder&amp;CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Essento is the European pioneer for delicious, protein-rich and ecologically worthwhile insect food products.We  develop,  produce  in-house  and  market  our  food  innovations, like insect snacks, insect protein bars or insect burgers, for retail, food service and direct sales online.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27c9</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOODMAESTRO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOODMAESTRO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JuliaHayden,HeadOfDieteticAndProductInnovation"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foodmaestro’s  mission  is  to  help  shoppers  answer  the  simple  question,  “Can  I  eat  this?”.  Our  digital  solutions enable retailers, food manufacturers and  healthcare  to  provide  patients  and  consumers  transparency into the foods they eat and also nudge them  to  suitable  or  healthier  products  based  on  the  personal dietary needs.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27cb</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Faromatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Faromatics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HeinerLehr,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faromatics is a Precision Livestock Farming company and the creator of ChickenBoy, the world&apos;s first ceiling-suspended robot that monitors broiler chickens and helps farmers increase both animal welfare as well as farm productivity. The ChickenBoy uses a complete set of sensors to measure thermal sensation, air quality, light and sound. It also uses artificial intelligence to find issues with health/welfare and farm equipment. We are currently in five European countries.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27ca</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FoodPairing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FoodPairing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JohanLangenbick,Founder&amp;CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foodpairing   is   a   business   intelligence   company   offering personalisation &amp; predictive NPD for food and beverage  companies.  Through  deep  understanding  of  consumer  flavour  preferences;  Foodpairing  has  become the leader in the area of personalised dietary recommendations.  The  consumer-  and  product  data  serves as input for an AI platform for flavour and food product development. The platform helps companies to predict the most successful product compositions to increase sales.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27cc</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrançoisVallée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrançoisVallée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Comerso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Glucanova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Glucanova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JörgenHolm,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucanova   was   founded   in   2012   with   focus   on   IP   protected   fiber   rich   liquid   oat   ingredients   and   technologies.  Our  vision  is  to  address  global  health  and     sustainability     concerns     with     documented     healthy  liquid  oat  fiber  products.  We  work  closely  in  cooperation with Lund University and a large external network  of  world  class  expertise  which  means  that  our innovations and deliverables are the result of well documented scientific findings.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27cd</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Innovopro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Innovopro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TalyNechushtan,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innovopro is first to introduce commercially chickpea protein 70% concentrate to the global market. Our proprietary technology enables sustainable production &amp; the creation of clean label applications. We offer a complete solution to consumers &amp; customers in terms of:</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27ce</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOEWI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOEWI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PhilippMerk,ManagingDirector"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOEWI is a scientific spin-off of the Technical University of Munich and is making personalised health and nutrition available to everyone. Why? Because the food supplement market is broken. Thousands of companies try to sell all kinds of vitamins without knowing if their customers actually need them and if so, in what dosage. By using high-quality blood and lifestyle diagnostics LOEWI ensures that the customers get exactly what they need, not too much and not too little.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27cf</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LeoMoreta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LeoMoreta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YPSICON"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MICROBION -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MICROBION">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AntonioDelCasale"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microbion    is    a    Contract    Research    Organisation    of         molecular         microbiology         applied         to         agriculture,     food     and     nutraceutical     industries.We  provide  scientific  services,  including:  phenotypic,  genetic,  genomic  and  metagenomic  custom-based  analysis; and we develop innovative diagnostics tools to   understand   microbial   biodiversity   for   industrial   exploitation.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d1</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MagdalenaKozlowska -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MagdalenaKozlowska">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NapiFerynBioTech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MalteStampe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MalteStampe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROLUPIN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcosPereira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcosPereira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ENERGYPULSESYSTEMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarineFeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarineFeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlleStenberg,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marine Feed operates Sea Squirt cultivation with a strong positive environmental impact on the sea. From the Sea Squirts we produce two product lines:</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d0</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MihaPipan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MihaPipan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BetterOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mimica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mimica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SolveigaPakštaitė,Founder"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimica   is   creating   the   next   generation   of   food   expiry    labeling    that    reduces    food    waste    and    improves     food     safety.     60%     of     wasted     food     is    still    perfectly    edible    due    to    the    confusing    and    inaccurate    date    system    currently    in    use.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d2</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MosaMeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MosaMeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TimVanDeRijdt,ChiefBusinessOfficer"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosa Meat produces beef by growing it directly from animal cells. Presenting the world&apos;s first cultivated hamburger in 2013 (costing EUR 250.000), our team inspired a cellular agriculture industry, where 70+ companies worldwide now grow meat and seafood in a more efficient, sustainable way. Our team of 44 scientists, engineers and food lovers, is optimizing taste, cost, and a scaled production process, to ultimately reshape the global food system.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d3</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NapiFerynBioTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NapiFerynBioTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MagdalenaKozlowska"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NapiFeryn      BioTech      developed      and      patented      technology  to  obtain  food  grade  proteins  from  the  material  left  over  after  pressing  oil  from  rapeseed.  The  rapeseed  proteins  generated  in  our  technology  have  unique  functional  properties  which  make  them  an ideal food ingredient. Technology has been proven on pilot scale – we generate pre-commercial samples that  we  offer  to  food  producers.  The  technology  package   will   be   disseminated   through   licensing   agreements.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d4</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NaturalMachines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NaturalMachines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LynetteKucsma,CMO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural   Machines   are   creating   a   new   generation   IoT  kitchen  appliance,  a  3D  food  printer.  We  call  it  Foodini. It’s the world’s first 3D food printer making savory and sweet foods, using fresh, real ingredients. Fundamentally,   Foodini   contributes   to   a   healthy   eating lifestyle by helping people prepare freshly made meals and snacks.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d5</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Novolyze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Novolyze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Pierre-OlivierBéal,HeadOfSales&amp;Marketing"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Novolyze     is     developing     and     commercialising     innovative     technologies     to     help     the     industry     manufacture safer food and comply with international Food   Safety   &amp;   Quality   Standards.   Our   approach   relies  on  the  utilisation  of  cutting-edge  microbiology  solutions,  combined  with  digital  developments  in  IoT  and machine learning.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d6</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Nutrileads -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Nutrileads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ErikDam,CBO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NutriLeads  is  a  pre-commercial  Health  Ingredients  Company  developing  crop-derived  food  ingredients  with   clinically   proven   health   benefits   for   specific   consumer groups.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d7</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OSPIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OSPIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DrNinaBuffi,CTO&amp;ManagingDirector"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OSPIN is a Berlin-based company automating and digitising bioprocesses mainly in the field of tissue engineering, cell therapy, and cultured meat. In the cultured meat space, OSPIN is working with different companies, both in Europe and in the USA, providing them with custom bioreactor systems for cell expansion, cell differentiation and developing unit operations for media recycling and cell feeding.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d9</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Orbisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Orbisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlafVanDerVeen,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orbisk  is  on  a  mission  to  make  the  world  food  system  more  sustainable.  By  using  innovative  technology and AI we provide the food service industry with detailed insights into their food waste. Our smart camera on top of the waste bin, connected to  a  scale,  will  automatically  register  all  food  that  is  being  thrown  away  up  to  the  ingredient  level.  This  helps them reduce waste while optimising their profit margin.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27d8</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PIELERS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PIELERS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KeLi,Finance"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIELERS is a cloud-based farm2fork open food platform with multiple API, where small and medium-sized food manufactures and farmers sell food online B2C and B2B directly to customers and digitalize their business. It is our mission to promote farm to fork sales to increase farmers’ profits, freedom and support regional farming. We believe that higher produce prices and transparency will spur innovation in food production, sustainability, and animal welfare.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27db</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROLUPIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROLUPIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MalteStampe"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prolupin   produces   unique,   premium   lupine-based   proteins  through  our  patented  extraction  process.  Our  mission  is  to  contribute  to  a  more  sustainable  food consumption by enhancing people’s and planet’s health   and   by   providing   high-value   plant-based   protein   alternatives.   Our   local   sourceable   protein   alternatives ignite the acceptance and usage without any compromise on sensorial requirements.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27dc</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PeaceOfMeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PeaceOfMeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidBrandes,ManagingDirector"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peace of Meat is a producer of cultured fat. We produce fat directly from animal cells without the need of growing or slaughtering live animals. An alternative to unsustainable animal farming: Real meat straight grown from cells, no animals needed. Our objective is to produce 100.000 tons of cultured fat per year which contributes to the Paris Climate targets by 3% and eliminates 2.4mn cows from the food supply chain per year.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27da</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Protera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Protera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FranciaNavarrete,COO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We are producing next-generation protein ingredients for food applications. To design our products we have developed a process called Natural Intelligence™ which takes advantage of proprietary AI algorithms to design functional proteins, then we produce them at scale using fermentation. This process can shine a light on a previously untapped universe of proteins. Shelf-life extension, palm oil replacers and Antioxidants are part of Protera&apos;s product portfolio.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27dd</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PrzemyslawZelazowski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PrzemyslawZelazowski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SATAGRO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RedefineMeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RedefineMeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EshcharBen-Shitrit,CEO&amp;Co-Founder"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Redefine Meat&apos;s mission is to make the perfect steak without the need for animals. Instead of cows, the company utilizes plant-based ingredients, proprietary meat-modelling and industrial-scale 3D food printers. Targeting meat distributors, restaurants and retailers, Redefine Meat has developed patent-pending technology that replicates the texture, flavour, and eating experience of beef.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27de</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RootWave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RootWave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndrewDiprose,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RootWave uses electricity to zap weeds with zero chemicals to offer a sustainable and scalable alternative to chemical herbicides. The technology is sustainable, no-till and cost-comparative to herbicides. RootWave have launched a professional hand-weeder for parks and gardens for spot-weeding and treating invasive weed species. RootWave is developing automated weeders for agriculture for cereal, vegetable and fruit crops. RootWave is located in the UK and Europe.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27df</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SATAGRO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SATAGRO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PrzemyslawZelazowski"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SatAgro aspires to be a world-class, intuitive, scalable, and affordable online service which supports farms of different  sizes  by  linking  them  with  state-of-the-art  satellite   monitoring   and   connected   agroanalytics.Since  2015,  we  are  democratising  data  and  turning  them    into    actionable    insights    to    help    farmers    around  the  world  become  more  profitable  and  more  sustainable. Join  us  to  take  part  in  this  adventure  of  shaping  the  new reality for agriculture.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e1</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SafetyNetTechnologies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SafetyNetTechnologies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DanWatson,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNTech, a UK company led by CEO Dan Watson, COO Nadia Laabs and CTO Aran Dasan, designs and builds trusted and valued solutions that enable precision fishing in the fishing industry. Pisces, our first-to-market product, is supplied via a Hardware-as-a-Service model, which enables fishing crews to catch only the right fish. Our research focuses on how humans and the ocean can thrive together. We operate in the UK, France, Spain, the US, Denmark, Malaysia, Indonesia. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e0</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScanTrust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScanTrust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RicardoGarcia,HeadOfPartnerships&amp;BlockchainAdvisory"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scantrust is a connected goods platform for companies that depend on selling physical products in a connected world. Scantrust was founded in Switzerland in 2014 and has over 30 global customers, most of which are Fortune Global 2000 companies and from the Food &amp; Beverage industry. A key result of implementing our solution is unit-level product digitalisation to drive digital transformation within supply chains and achieving end-to-end transparency to consumers.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e2</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SuSea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SuSea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MariosChrysolouris,CEO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SuSea is a preservation technology company developing innovative preservation technologies for seafood with an aim to provide healthy and high-quality seafood products, improve seafood safety and reduce waste by increasing shelf life. We address these challenges by rapidly dehydrating seafood with our proprietary liquid solution containing natural ingredients which doubles its shelf-life.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e3</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SwissDeCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SwissDeCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BrijSahi"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SwissDeCode has the vision of building trust and securing the global food value chain. Based in Lausanne, Switzerland, the company helps food producers to grow and supply food that is safe to eat by delivering real time certification of authenticity, safety and quality of products, processes and premises.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e4</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Thegreendata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Thegreendata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BenoîtBriault"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As an Expert in Ag Data, Thegreendata tackles major challenges for Food Processors, Cooperatives and Banks thanks to the new services we design and build with them.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e5</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorIce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorIce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorsteinnIngiViglundsson,ManagingDirector"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThorIce  has  developed  a  revolutionary  system  to  kill  harmful  bacteria  on  poultry  meat,  without  using  any  chemicals or pharmaceuticals.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e6</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Trellis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Trellis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlayEnglard,CEO&amp;Founder"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trellis  is  leading  provider  of  data  and  AI  to  help  vertically   integrated   food   &amp;   beverage   producers   increase  supply  chain  and  manufacturing  efficiency.  With Trellis, AI food industry can connect all the data, insights,   teams   to   drive   ROI,   efficiency,   resource   utilisation and growth.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e7</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UrbanCropSolutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UrbanCropSolutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MaartenVandecruys,Founder&amp;CTO"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urban   Crop   Solutions   develops   and   builds   indoor   vertical  farms:  plant  recipes,  hardware  &amp;  software.  All tailormade to the specific needs of our clients. We believe  in  using  technology  to  increase  plant  quality  while  minimising  our  planet’s  resources.  Together  with  our  team  of  Plant  Scientists  and  Engineers,  we  deliver  tailormade  solutions  across  the  globe,  all  of  them  linked  to  our  database  of  in-house  developed  plant growing recipes.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e8</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Vaxa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Vaxa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ReineLeefsma,VPMarketing&amp;BDManager"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaxa has developed a disruptive new technology platform perfecting the cultivation of Omega-3 rich micro-algae. Bringing a new scientific approach, our technology, as compared to the current state of the art, requires less than 1% of the fresh water, less than 1% of the land footprint and is carbon negative. We are constantly improving the growth and performance of each strain using machine learning and data analytics techniques. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27e9</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Wasteless -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Wasteless">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidKat,VPBusinessDevelopment"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wasteless  offers  a  turnkey  solution  optimising  food  price  markdowns  based  on  expiry  dates.  Retailers  sell  products  with  a  limited  expiration  date,  marked  off along the demand curve. Selling food, rather than wasting it, lifts profits significantly.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27ea</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YPSICON -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YPSICON">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <REPRESENTED_BY rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LeoMoreta"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ypsicon    is    a    technology-based    company    with    headquarters in Barcelona. Its activity is focused on the  development  of  new  technologies,  as  well  as  on  the  design  and  manufacturing  of  components  and   equipment   for   the   food,   pharmaceutical   and   cosmetics  industries.  Ypsicon  commercialises  three  patented  technologies  on  a  global  basis  which  have  great  potential  for  the  beverage  industry:  Ultrahigh  pressure   sterilisation/homogenisation,   Ultraviolet-Thermal pasteurisation and UV-C bottle sterilisation.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60e57ef9620af8baf0ac27eb</ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmparoRoca,ChiefOperatingOfficer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmparoRoca,ChiefOperatingOfficer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AITALENTUM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndrewDiprose,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndrewDiprose,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RootWave"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CatherineKidd,DirectorOfMarketing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CatherineKidd,DirectorOfMarketing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EagleGenomics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ChristianBärtsch,Founder&amp;CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ChristianBärtsch,Founder&amp;CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Essento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ClaudiaSiemer,R&amp;DManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ClaudiaSiemer,R&amp;DManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELEA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ColineLaurent–Marketing&amp;CommunicationOfficer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ColineLaurent–Marketing&amp;CommunicationOfficer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ConnectingFood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DanWatson,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DanWatson,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SafetyNetTechnologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidBrandes,ManagingDirector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidBrandes,ManagingDirector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PeaceOfMeat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidKat,VPBusinessDevelopment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DavidKat,VPBusinessDevelopment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Wasteless"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DrNinaBuffi,CTO&amp;ManagingDirector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DrNinaBuffi,CTO&amp;ManagingDirector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OSPIN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EranBaniel,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EranBaniel,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DouxMatok"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ErikDam,CBO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ErikDam,CBO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Nutrileads"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EshcharBen-Shitrit,CEO&amp;Co-Founder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EshcharBen-Shitrit,CEO&amp;Co-Founder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RedefineMeat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FranciaNavarrete,COO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FranciaNavarrete,COO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Protera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GlennMathijssen,Co-CEO&amp;CTO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GlennMathijssen,Co-CEO&amp;CTO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Alberts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HeinerLehr,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HeinerLehr,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Faromatics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HubertusWasmer,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HubertusWasmer,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Clevabit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlanSamish,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlanSamish,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AmaiProteins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlayEnglard,CEO&amp;Founder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IlayEnglard,CEO&amp;Founder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Trellis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JohanLangenbick,Founder&amp;CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JohanLangenbick,Founder&amp;CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FoodPairing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JuliaHayden,HeadOfDieteticAndProductInnovation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JuliaHayden,HeadOfDieteticAndProductInnovation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOODMAESTRO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JörgenHolm,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JörgenHolm,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Glucanova"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KeLi,Finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KeLi,Finance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PIELERS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LisaLarkin,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LisaLarkin,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DurrowMills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LynetteKucsma,CMO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LynetteKucsma,CMO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NaturalMachines"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MaartenVandecruys,Founder&amp;CTO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MaartenVandecruys,Founder&amp;CTO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#UrbanCropSolutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MariosChrysolouris,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MariosChrysolouris,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SuSea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlafVanDerVeen,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlafVanDerVeen,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Orbisk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlleStenberg,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OlleStenberg,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarineFeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PhilippMerk,ManagingDirector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PhilippMerk,ManagingDirector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOEWI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Pierre-OlivierBéal,HeadOfSales&amp;Marketing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Pierre-OlivierBéal,HeadOfSales&amp;Marketing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Novolyze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ReineLeefsma,VPMarketing&amp;BDManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ReineLeefsma,VPMarketing&amp;BDManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Vaxa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RicardoGarcia,HeadOfPartnerships&amp;BlockchainAdvisory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RicardoGarcia,HeadOfPartnerships&amp;BlockchainAdvisory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScanTrust"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScottFischaber,ChiefOperatingOfficer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ScottFischaber,ChiefOperatingOfficer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ANALYTICSENGINES"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SeanPeters,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SeanPeters,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DryGro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SolveigaPakštaitė,Founder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SolveigaPakštaitė,Founder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mimica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SushmaShankar,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SushmaShankar,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DeepPlanet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TalyNechushtan,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TalyNechushtan,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Innovopro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorsteinnIngiViglundsson,ManagingDirector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorsteinnIngiViglundsson,ManagingDirector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ThorIce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TiagoPessoa,CEO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TiagoPessoa,CEO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AgriMarketplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TimVanDeRijdt,ChiefBusinessOfficer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TimVanDeRijdt,ChiefBusinessOfficer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MosaMeat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YoavReisler,ExternalRelationsManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YoavReisler,ExternalRelationsManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <REPRESENT rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AlephFarms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label>THINGS</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
