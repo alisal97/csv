@@ -1,0 +1,1837 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:label>HAS SITE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE">
+        <rdfs:comment>it represent the register of all the people having a role in the company</rdfs:comment>
+        <rdfs:label>AFFILIATED_PEOPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreyGolub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreyGolub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrey Golub</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreyGolubPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AndreyGolubPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BALDISSERAAmir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BALDISSERAAmir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BALDISSERA Amir </NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BALDISSERAAmirPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BALDISSERAAmirPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Cubbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Cubbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cubbit is a hi-tech startup that develops innovative software for the cloud industry, it&apos;s headquartered in Bologna, Italy and got selected in 2018 by Techstars &amp; Barclays� accelerator in Tel Aviv, Israel.Cubbit has developed a technology that disrupts the global cloud industry by eliminating the root cause of its problems: centralised web farms. Cubbit replaces them with a distributed data-center based on a peer-to-peer network made of domestic servers that is cost-saving, scalable and safe. It is also environmentally sustainable: Cubbit uses around 10 times less energy than centralised cloud.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bc9c</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emilia Romagna</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.333712665</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.cubbit.io</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CubbitCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CubbitCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Digitalgreen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Digitalgreen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIGITALGREEN is a software company that developed the firm digital platform for the trade of agricultural products and medical herbs between China and Europe across the Silk Road.  Our A.D.B.I. (Agricultural Data Business Intelligence) platform work as an ERP software for agricultural firm management, a logistical and transport planning systems for the organization of the shipments and a consumer portal (Both B2B and B2C) for the direct trade with growers. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bc9b</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sicilia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.349316095</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.digitalgreen-vh.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DigitalgreenCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DigitalgreenCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DomenicoDeLuca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DomenicoDeLuca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domenico De Luca</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DomenicoDeLucaPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DomenicoDeLucaPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#E-LISA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#E-LISA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Production</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-LISA is an innovative start-up established on 27 September 2016. The company operates in the ICT services sector supporting medicine;in particular, the company deals with scientific research in the field of traumatology and the development of ICT systems conceived specifically for critical applications in orthopedics. The technological solution developed by E-LISA concerns about a set of services for the dissemination of knowledge and for pre-operative planning in the field of orthopedic surgery. Having anupper limb surgery expert available in the social structure, the shoulder is the first anatomical district on which E-LISA started its research and development work. In the social structure there are:an engineer specialized in the realization of mathematical models;an expert in business management, marketing and communication; the Pineta Grande SpA company, owner of 7 health facilities, GM Medica Srl, operating teather manufacturer. The E-LISA project starts with a remarkable research activity and with the experience developed on field by the founding members.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb6</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campania</LOCATION>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.e-lisa.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#E-LISACOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#E-LISACOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EMC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EMC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Production</CATEGORY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMC2 SRL is an innovative start up. Our team designed and sell an innovative chip tuning box for engine efficiency improvement app controlled and with big data optimization in base to the driving habits. The Italian Box it�s a chip tuning box for the engine (car, truck, boat,�) efficiency increase. The chip is linked to the engine (installation is very easy), and through a specific software optimize the calibration of the engine management system, in base to the fuel conditions, air parametres,� but also in base to the desires of the customer. So the box permits to get an average increase of the power and torque of the engine of the 25% and a fuel consumption decrease of the 10%. Thanks to the specific app, in fact, the driver can change in real time from different maps. The APP in fact collect some big datas about the driving habits, and so after some months it can suggest to the driver some specific settings in order to get the best optimization. At the same time these datas (in anonymous way) can be supplied to car manufacturers or other players interested in driving habits of specific customized drivers. We�re also working on an implementation of the software and app specific for China market, in order to permit a control from remote of some parametres of the car. For exemple, the possibility to do not permit the car use (cutting the power) if the user didn�t pay the insurance. Or limit the speed of the car at 50 kmh when passing in a 50kmh zone, oor send an immediate bill (in cities with no camera).</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb7</ID>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WWW.THEITALIANBOX.COM</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EMC2COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EMC2COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Edugo.ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Edugo.ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI &amp; Big Data</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edugora leverages AI to amplify and scale the human element of language learning. Edugora&apos;s natural language processing technology transforms a video-call between a teacher and a student into a interactive review lesson automatically. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb3</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sicilia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.861852174</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edugora.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Edugo.aiCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Edugo.aiCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ElseCorp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ElseCorp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI &amp; BIG DATA</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELSE Corp offers technological solutions for Virtual Retail and Cloud Manufacturing to fashion brands, retailers, manufacturers and designers. Founded in Milan in 2014, the company is committed to creating value not only for the market but also for society. The company is redefining the Value Chain for the fashion industry through Applied Research; open innovation and collaboration with industry leaders; the development of sustainable, transparent and traceable technology and business processes; and through market trials for new Distribution Models. ELSE Corp provides the fashion industry with an open, extendible, partially free (for basic services), highly flexible and reliable platform for 3D Virtual Retail. The company�s new business model for the fashion industry, Virtual Retail, is a strategy for the Digital Transformation of the entire value chain of brands, retailers and manufacturers. It leads to a Direct to Consumer approach to the market through the automation and democratization of product customization and personalization processes and the industrial approach to made to measure sales. The Virtual Retail model is an innovative concept that leverages 3D technologies, industry 4.0 and artificial intelligence to enable businesses to deliver unique, futuristic and luxurious experiences, perfect fit products and more sustainable production processes, while empowering talent and creativity. It focuses on the main difficulties of two main players: Customers and Businesses. Through its 3 key elements: Industrial Made to Measure, Mass Customization, Made to Order; Virtual Retail solves the style and fit problems of customers, and in turn solves the problems of businesses related to stock and the immense waste generated. 
+  It represents a turning point for future methods of retail, providing new innovative strategies for the sales, design, production, distribution and marketing of fashion products.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb4</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lombardia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> +39 375 5221831, +7(917) 778-90-07 </TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.else-corp.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ElseCorpCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ElseCorpCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EugenioPiraccini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EugenioPiraccini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eugenio Piraccini</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EugenioPiracciniPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EugenioPiracciniPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXPERENTI was born out of a strategic vision founded by studying Gartner&apos;s Hype Cycle trends and carrying out research that identified the innovative potential of Augmented Reality applied to the corporate market (b2b) rather than to the final consumer. EXPERENTI develops solutions in Augmented Reality, Virtual Reality and Mixed Reality to generate value for the B2B market.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb2</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veneto</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tel.�+39 049 936 04 66�- +39 049 936 309�</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.experenti.eu</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ExperentiCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ExperentiCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FabrizioFiorentino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FabrizioFiorentino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabrizio Fiorentino </NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FabrizioFiorentinoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FabrizioFiorentinoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Flairbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Flairbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlairBit delivers its platform as a service (PaaS) Senseioty designed to collect data from heterogeneous data sources, store these data into Big-Data lakes and to process these data by using Artificial Intelligence algorithms to generate insights helping decision makers to boost the operational efficiency. Senseioty is used by many important customers in different application domains e.g., Smart Manufacturing, Smart Agriculture, Fleet Management, Life Science and Connected Equipment for monitoring and remote control, process optimization, fraud detection, predictive maintenance.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca3</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liguria</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.347128378</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.flairbit.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlairbitCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FlairbitCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoCarpineti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoCarpineti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco Carpineti</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoCarpinetiPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoCarpinetiPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoPellecchia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoPellecchia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco Pellecchia</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoPellecchiaPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoPellecchiaPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoVitoTassone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoVitoTassone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco Vito Tassone</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoVitoTassonePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FrancescoVitoTassonePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureFashionSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureFashionSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS - Design Italian Shoes is the custom-made shoe brand that modernizes excellent Italian craftsmanship through the use of cutting-edge technology: a proprietary 3D Shoes Configurator purposely developed and structured to be placed inside retail stores as a touch screen. It�s a real creative process that allows stores and customers to play with more than 50 million combinations of leathers, accessories and soles, in order to create a unique shoe each time, as unique as each person, while stores won�t have storage rooms cluttered anymore. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca1</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marche</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">327 9438745, 3292522274, 328 12 66 169
+Office +39 327 94 38 745</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.dis.shoes</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureFashionsrlCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureFashionsrlCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GenentaScience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GenentaScience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprehensive Health</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genenta Science, a clinical-stage biotechnology company pioneering the development of hematopoietic stem cell gene therapies for cancer (Temferon�). 
+Genenta develops an ex-vivo gene transfer strategy into autologous hematopoietic stem/progenitor cells (HSPCs) to delivery immunomodulatory molecules directly via tumor-infiltrating monocytes/macrophages (Tie2 Expressing Monocytes - TEMs). Genenta�s proprietary product is Temferon�.  The targeted expression of the immunomodulatory molecule in TEMs is achieved combining a transcriptional and post-transcriptional microRNA-mediated control. Thanks to these mechanisms, TEMs become capable to express the immunomodulatory molecule (Interferon-alpha, �IFN-?�) in the tumor microenvironment.  TEMs are endowed with a pro-angiogenic activity and are spontaneously and actively recruited by developing tumors to sustain their growth. Thanks to the immune-gene transfer, TEMs become the tool for the local delivery of the immunomodulatory molecule. In the preclinical models, the local IFN-? release triggered both a direct (anti-angiogenic, pro-apopototic) and an indirect anti-tumor effect (immune response). In contrast to antigen-restricted Chimeric Antigen Receptor T cells (CAR-T), Temferon� may reach not only hematologic disorders but more importantly, also solid tumors. In addition, its immune-modulatory functions may trigger a long-lasting immune response towards multiple tumor antigens. As a result, Temferon� should be able to break the tumor immune-tolerance by reprogramming the tumor immune microenvironment. 
+Genenta obtained the regulatory approvals for two Phase I/II clinical trials in early relapse Multiple Myeloma patients after front line therapy and newly diagnosed Glioblastoma Multiforme patients. 
+Genenta�s headquarter is in Milano (Italy) and Genenta has an office in Alexandria Center�s LaunchLabs, New York (NY, USA). The Company is part of Assobiotec, Italia StartUp, and ELITE (London Stock Exchange Group). 
+Genenta raised more than �30M in three different rounds of financing.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcab</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lombardia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.genenta.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GenentaScienceCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GenentaScienceCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiovanBattistaCozzone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiovanBattistaCozzone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giovan Battista Cozzone</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiovanBattistaCozzonePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiovanBattistaCozzonePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeLombardo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeLombardo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco lombardo</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeLombardoPARTECIPANT_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeLombardoPARTECIPANT_2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeTomasello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeTomasello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giuseppe Tomasello</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeTomaselloPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#GiuseppeTomaselloPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HSIAOCHING-YI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HSIAOCHING-YI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSIAO CHING-YI</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HSIAOCHING-YIPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HSIAOCHING-YIPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main goal of INESSE Co. is to renew the nautical sector, technologically stopped for decades, introducing Superfoils 15, a unique boat in the world, a luxury yacht of over 15 meters, which - thanks to the use of real wings (called foils) - is able to &quot;fly&quot; on the water, the result of design, studies and testing of the highest level that hides a technological secret that will revolutionize the concept of navigation�
+</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bc9f</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emilia Romagna</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">340 1736822 </TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.inessecorporation.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporationCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporationCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InspireS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InspireS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Equipment</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspire designed and patented an innovative drone management platform named M.A.R.S. (Multiple Airdrones Response System).  The M.A.R.S. platform enables drone continuity of service, overcoming the limitations of battery autonomy and fractionable payloads, extending drone usage for continuous and virtually never-ending operations.  The main advantage of the system is its versatility and scalability: it is customizable to different applications and adaptable to the majority of commercial drones. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca6</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liguria</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.320798216</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.be-inspire.com/</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InspireS.r.l.COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InspireS.r.l.COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Knowhedge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Knowhedge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI &amp; Big Data</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowhedge is an Open Innovation and Executive Consulting company specialised on Edge Computing, AI, IOT and DLT (Distributed Ledger Technologies). 
+Knowhedge helps large international industrial embrace new exponential technologies, developing new products and business models then engaging innovative SMEs and Start-ups in the implementation phase. 
+Knowhedge helps large public administrations initiate pre commercial procurement initiatives and public procurement of innovation.
+Knowhedge also seeds innovative business ideas and Start-ups with highly innovative patented technologies such as to date:
+-Mywai, a patent pending development  for the engineering of a new smart speaker technology for the professional market (e.g. healthcare, fintech,  industry 4) blending  AI algos  and IOTA DLT access at the edge via dedicated neural nets . 
+- Smart Track , a patented IOT wearable solution  for Industry 4 worker safety (www.smarttrack.io) tracking man down and personal safety equipment both indoor and outdoor 
+- Skillaware, a patent pending Roboadvisor technology for software operator  training and performance support (www.skillaware.com)</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb5</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liguria</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3934577</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.knowhedge.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KnowhedgeCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KnowhedgeCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LiviaRenataPietroluongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LiviaRenataPietroluongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabrizio Fiorentino </NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LiviaRenataPietroluongoPARTECIPANT_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LiviaRenataPietroluongoPARTECIPANT_2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LorenzoDiCiaccio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LorenzoDiCiaccio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo di Ciaccio</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LorenzoDiCiaccioPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LorenzoDiCiaccioPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcoLombardo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcoLombardo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco lombardo</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcolombardoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MarcolombardoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassimoMariaSpani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassimoMariaSpani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Massimo Maria Spani</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassimoMariaSpaniPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassimoMariaSpaniPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MatteoMarino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MatteoMarino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matteo Marino</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MatteoMarinoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MatteoMarinoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mindesk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Mindesk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MINDESK connects CAD projects directly into Virtual Reality. Uusers can host interactive design review sessions where they can dynamically edit the project while their clients give them feedback in VR. Mindesk is natively integrated with Solidworks and Rhinoceros, and recently partnered with Epic Games to bring  Photorealistic CAD experience to life. The company relies on strategic partnerships signed with the most influential tech players worldwide.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca4</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Puglia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.mindeskvr.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MohannaAmmar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MohannaAmmar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohanna Ammar</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MohannaAmmarPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MohannaAmmarPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyCircle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyCircle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MYCIRCLE  develops a platform combining travel lovers&apos; wishes, with tour operators needs, by creating new interactive purchasing process between demand and supply. The ?nal customers (both individual or groups), can select a speci?c tourist package from the list, join the &quot;circle&quot; becoming part of a &quot;temporary community. Mycircle is a unique, innovative model of purchasing group vacations, enriching the adventure of visiting the world and meeting travellers, bringing together likewise individuals.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb1</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campania</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</POSTO>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.mycircle.it</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyCircleCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MyCircleCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextemaS.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextemaS.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Production</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+NEXTEMA is an innovative startup, spin-off of the Industrial Engineering Department of the University of Bologna. The company have four different business units: 
+�	Production of integrated laser manufacturing systems for: 1) surface hardening of mass and/or highly tailored high-end steel components 2) �additive manufacturing� processes (Direct Deposition)
+�	Advanced Manufacturing: 1) Metal Additive Manufacturing (SLM): co-engineering and production of complex high-end prototype and components small batches metal for application in Automotive, Packaging, Aeronautics etc.; 2) Foundry (Shape Casting) process Co-engineering and FEM Analysis for high-end components production (for instances Lamborghini, Ferrari, Aston Martin etc. engine and frame components)
+�	Automation Technologies
+�	�Industry 4.0� consultancy.
+Our products and consultancies are aimed at solving complex problems related to manufacturing processes and at developing innovative, robust, cost-effective technological solutions. Our strength is the combination of many different engineering skills, from mechanics and automation to metallurgy, a strong result-orientation coming from our activities on high-end customers shop floor and an analytical approach coming from our research-based legacy.
+</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bc9e</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emilia Romagna</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextemaS.r.l.COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextemaS.r.l.COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NicolaPetriccione -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NicolaPetriccione">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicola Petriccione </NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NicolaPetriccionePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NicolaPetriccionePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Notredames.r.l. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Notredames.r.l.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation and Sustainability</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Notredame s.r.l. is one of the most promising start-ups founded inside University of Calabria, in Italy. Starting from October 2017, with the project �Meraviglie� (POR CALABRIA � FESR 2014-2020 � CUP J28C17000080006) and, previously with the project �Smartlayer�, Notredame s.r.l. has increased its experience in the field of electrochromic devices. Notredame s.r.l. has important collaborations and partnerships with departments of Physics and Chemistry in the University of Calabria. Notredame s.r.l. is interested in discovering new electrochromic couples and electrolytic system, in order to improve smart windows features for the energy saving of the buildings. Notredame s.r.l. tests electrochromic couples that show different colorations, trying to achieve and control IR absorption too. Notredame s.r.l. is currently testing different types of electrochromic materials: organic, polymeric and inorganic. Some PhD students from the departments of Physics and Chemistry are helping the start-up too.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcaa</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calabria</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.328329824</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.notredamesrl.com/it/</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Notredames.r.l.COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Notredames.r.l.COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PONICSS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PONICSS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation and Sustainability</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PONICS is an innovative start-up that puts on the market integrated solutions for the design, construction and management of fish farming, in a symbiotic environment with aquaculture combined with hydroponics. The aim is to create plants that enable the development of urban aquaponic farms. The Acquaponica is an innovative cultivation solution aimed at creating eco-friendly ecosystems with zero impact, environmentally friendly and eco-sustainable, combining the growth of plant species, plants and models of sustainable and replicable vertical urban farms through the use of innovative aquaponic plants, designed to optimize, with vertical solutions, the cultivable surface, facilitating the management through the assistance of automation systems and web based software applications, developing a circular economy model with a view to Agriculture 4.0.
+The 100% natural and organic system with zero fertilizers, zero pesticides and zero kilometers, among the various advantages offers a 90% water saving, self-production, guarantee and food traceability.
+Ponics was established in May 2017, to date has made three pilot plants to mature the knowledge and skills necessary for pre-industrialization of products and to verify the olfactory properties and flavor of vegetables produced with aquaponic systems.
+To contribute to the spread of Made in Italy food culture and Ponics products totally made in Italy, it is exhibited in the Promenade du Porto of Porto Cervo from June to September, p.v. the Chinampas2.0. The first plant made by Ponics, air-conditioned, remote controlled and managed remotely, designed for self-production of vegetables, herbs and officinalis directly in the galley or in the gardens of boats over thirty meters.
+</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca9</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WWW.PONICS.IT</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PONICSS.R.L.COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PONICSS.R.L.COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PaoloBonci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PaoloBonci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolo Bonci</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PaoloBonciPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PaoloBonciPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ParodiMatteo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ParodiMatteo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parodi Matteo</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ParodiMatteoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ParodiMatteoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Participant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Participant1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participant 1</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Pedius -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Pedius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comprehensive Health</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedius is a communication service that allows the Deaf and Hard of Hearing to make phone calls, without a third party intermediary, 24/7. We are on a mission to make calling and basic communication more accessible and inclusive for Deaf people. Users type or speak their message into their device and Pedius sends it to the contact they choose, using either the user�s own voice or an automated voice through speech synthesis. In real-time the user reads the written translation of the recipient�s answer, thanks to Pedius� voice recognition software. Pedius has also developed relationships with large companies that want accessible services for all clients.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcaf</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.32826175</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.pedius.org</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PediusCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PediusCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PersonalFactorys.p.a. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PersonalFactorys.p.a.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation and Sustainability</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Factory supplies a patented technology and chemical compounds to produce construction materials on site with local raw materials.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bc9d</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calabria</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.328343802</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.personalfactory.eu</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PersonalFactorys.p.a.COMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PersonalFactorys.p.a.COMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RamosCoboCarlosMiguel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RamosCoboCarlosMiguel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramos Cobo Carlos Miguel</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RamosCoboCarlosMiguelPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RamosCoboCarlosMiguelPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RobertoTermine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RobertoTermine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberto Termine</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RobertoTerminePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RobertoTerminePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMININGSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMININGSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comprehensive Health</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Description: The mission of SoftMining is to change the way to perform research in Life Sciences using Artificial Intelligence and dedicated in-house algorithms. Over the last ten years, our group has developed new methods for the design of drugs and to check their potential toxicity without the use of animal models. Our primary goal is to design new drugs rapidly and economically. SoftMining has also developed new techniques of data mining currently applied to the analysis of biomedical data. 
+
+One-Line Pitch: The computational revolution in life sciences and data mining
+Business Summary: We developed new methods based on artificial intelligence. Our technologies provide a comprehensive platform for computational assisted drug design. SoftMining offers a broad range of computationally aided drug design services to support the research of pharmaceutical companies. We are continually developing new technology to meet the ever-changing needs of the market (www.softmining.it). 
+Other applications of SoftMining tools are in the field of Digital Health, Search Engines, and Semantic Analysis.
+
+Target Market: SoftMining offers to Big Pharma new tools for drug design that permit to speed up the Research and Development stage. SoftMining applies AI methods for data and knowledge mining for process optimization. We plan to expand our activities in China and Japan during 2020. 
+
+Products: We have developed:
+1.	AI-based drug discovery platform that is 10x more productive than current industry standards. 
+2.	AI-based platform for materials optimization
+3.	Semantic analysis tool
+4.	E-health applications. 
+More info at www.softmining.it. 
+
+Services: We assist companies active in the life sciences field as CRO. We offer our AI technologies in biomaterials development. 
+
+Goals: we are looking for partners for co-developing novel drugs. We are looking for companies in the digital health field.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcae</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campania</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.softmining.it</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMININGSRLCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMININGSRLCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SalvatoreFrassanito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SalvatoreFrassanito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salvatore Frassanito</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SalvatoreFrassanitoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SalvatoreFrassanitoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SorrentoGabriele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SorrentoGabriele">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sorrento Gabriele</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SorrentoGabrielePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SorrentoGabrielePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#StefanoPiottoPiotto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#StefanoPiottoPiotto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stefano Piotto Piotto</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#StefanoPiottoPiottoPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#StefanoPiottoPiottoPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TechMass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TechMass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Production</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechMass, Improving Production Floor Productivity focusing on people!
+
+We implement lean manufacturing principles through an IoT cloud-based tool and a digital platform based on Machine Learning; it facilitates the line operators in monitoring and improving the efficiency of manufacturing production floor. It helps to increase productivity and reduce costs. 
+</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca2</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veneto</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.39259063</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://techmass.io/it/home/</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TechMassCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TechMassCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Tolemaica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Tolemaica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TOLEMAICA offers a certified service with legal value of datacertation and geolocation of photographs and voice content in an automatic and instantaneous way. The archive of photos and/or voice and certificates with legal value can be consulted remotely and in completely exclusive way. Services are based on the IAC technology, a new SYSTEM useful to solve problems of individuals, professionals, companies and public institutions; flexible and usable with smartphones, or other equipment provided by costumers, such as Scanners, Camera, Palmtop, Drones, CombatCam, and compatible with every existing App through API (Application Program Interface).</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca5</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campania</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.334628299</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.ownclick.net</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VAXXITSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VAXXITSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprehensive Health</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaxxit SRL aims  to bring to market the recombinant HIV Tat immunotherapy (rTAT) developed by the National Center for HIV/AIDS Research (CNAIDS) at the Istituto Superiore di Sanit� (Italian NIH, Rome, Italy). The therapeutic use of rTAT is protected by granted Vaxxit patents that ensure commercial exclusivity until 2032 in the USA, Europe and South Africa. Beyond 2032, a rich pipeline of next generation products (mAbs, recombinant proteins and peptides, new combinations and uses also for cancer, companion diagnostics) can be protected with undisclosed patentable know-how. The rTAT strategy is radically different from the canonical strategies directed against the ever-mutating ENV proteins of the external coating of the virus that have not worked so far. In contrast, rTAT targets HIV-1 Tat, a key HIV virulence factor for both infection and viral latency. Tested in pre-clinical monkey studies and in 5 human clinical trials: 3 phase I studies (2 preventive and 1 therapeutic) and 2 phase II therapeutic trials in Italy (8 years) and in South Africa (3 years). The phase II studies not only confirmed a robust increase of CD4+ T cells and of CD4+/CD8+ T cells ratio, highest in volunteers who started therapy late (�latecomers�: 40% of the world HIV population) and were responding poorly (�immunological poor responders�), but, more importantly, the 8-year Italian study showed a drastic acceleration (4-7 times) of the reduction of the virus reservoirs as compared to therapy alone (1). These characteristics are present in rare HIV patients called &quot;post-treatment controllers&quot; who are capable of controlling the virus after stopping therapy. It is conceivable, therefore, that rTAT could have increased these capabilities in treated volunteers. This hypothesis will be tested in a phase IIb study of programmed and controlled therapy interruption (in planning) and, if confirmed, the study will open new perspectives for cure and eradication of HIV.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcac</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.347782944</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.vaxxit.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VAXXITSRLCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VAXXITSRLCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ValentinaBrambilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ValentinaBrambilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valentina Brambilla</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ValentinaBrambillaPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ValentinaBrambillaPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VincenzoFracassi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VincenzoFracassi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vincenzo Fracassi</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VincenzoFracassiPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VincenzoFracassiPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionEngineeringItalySrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionEngineeringItalySrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comprehensive Health</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vision Engineering Italy srl is a medtech SME focused on research and development of innovative medical devices for eye care. The company�s legal form is a limited liability company. It is registered in the odinary section of the Chamber of Commerce in Rome (RM1395861). The firm�s corporate purpose includes the research and development, production, distribution, marketing, installation and maintenance of innovative products and services for improving eye care. The company&apos;s activities are primarily devoted to the development of medical devices for the treatment of corneal diseases. The firm has developed the first available theranostic UV-A device, Chromo4Vis, for treating keratoconus, which is the primary cause of corneal transplantation worldwide. In addition, our company has developed a point-of-care UV-A device, Vetuvir, for the treatment of corneal infections in veterinary medicine. The device induces a photo-oxidative antimicrobial process by irradiating the affected cornea soaked with riboflavin (Visioflavin).</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcad</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.33134383</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.visioeng.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionEngineeringItalysrlCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VisionEngineeringItalysrlCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VitoPerrone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VitoPerrone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vito Perrone</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VitoPerronePARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#VitoPerronePARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Yakkyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Yakkyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YAKKYO has developed Yakkyofy, a concept of dropshipping from China. In 2018 they published a Web App that helps dropshippers automate all their business daily tasks. Using Yakkyofy, they can focus on selling, because we will do all the rest: sourcing products, private labeling, logistics. Yakkyofy has an office in Rome focused on marketing and customer care and one in Shenzhen, focused on sourcing and shipping.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca7</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Puglia</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">�340 39 03 056</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yakkyofy.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YakkyoCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YakkyoCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Yocabe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Yocabe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Economy</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YOCABE main goal is to build a better, more convenient and intelligent solution for fashion brands to sell on the global top online retailers. Their Smart-Logistics technology allows them to connect to brands warehouses, mono-brand and multi-brand shops and wholesalers to access to the largest amount of product available. </DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca0</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</POSTO>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.yocabe.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YocabeCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YocabeCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation and Sustainability</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eProInn is a spin-off company born within the Energy and Propulsion Laboratory of the University of Salerno. The team has received several honors and awards for the research activities focused on hybrid-solar vehicles, presented at several international events and it had already developed a working prototype of a hybrid-solar vehicle within the framework of a EU project.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bca8</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campania</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.348561528</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.eproinn.com</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInnCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInnCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#idroluppolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#idroluppolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <CATEGORY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation and Sustainability</CATEGORY>
+        <COUNTRY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</COUNTRY>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Idroluppolo innovates the production technique of hops through hydroponics. The process guides our customers throughout the life cycle of the plant, including the phase of processing, marketing and reuse of processing waste. Idroluppolo ousts the typical problems of the cultivation of this plant. Anyone will be able to produce hops and profit from it thanks to our innovative process, even on problematic soil and unfavorable weather conditions. The creation of the www.luppolo.crea.gov.it project (of which we are part), funded directly by C.R.E.A. and from M.i.p.a.a.f, indicates a strong intention of the government to bring this cultivation in areas and small towns currently in great difficulty, calling it a real life-saving anchor.
+After the first experimental phase, we will create a 1000 square meter greenhouse to further develop our innovations: a nutritive solution dedicated to hops and I.O.T. sensors. to monitor the production from remote.The sale of hops will be marginal, our core business is the sale of the production process to the breweries but also to the farmers. We will supply various products and services, such as: hydroponic plant, nutritive solution, sensors, consultancy, transformation, sale (in the future) and reuse of processing waste, creating a complete package.
+Idroluppolo allows to overcome the critical issues of the cultivation on soil: the production is protected from atmospheric agents (greenhouse), the crop per square meter is four times higher, significant savings in water and soil, the absence of pesticides, aromas and unique flavors thanks to the continuous improvement of the nutritive solution.</DESCRIPTION>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60c32af2969bd70ed495bcb0</ID>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lazio</LOCATION>
+        <POSTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</POSTO>
+        <TEL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</TEL>
+        <WEBSITE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://idroluppolo.pages.libero.it/</WEBSITE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#idroluppoloCOMPANY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#idroluppoloCOMPANY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassenzAndreaOnly24th,25thAnd26th -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassenzAndreaOnly24th,25thAnd26th">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Massenz Andrea  only 24th, 25th and 26th</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassenzAndreaOnly24th,25thAnd26thPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MassenzAndreaOnly24th,25thAnd26thPARTECIPANT_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RosarioSquitritoOnly24th,25thAnd26th -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RosarioSquitritoOnly24th,25thAnd26th">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosario Squitrito only 24th, 25th and 26th</NAME>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RosarioSquitritoOnly24th,25thAnd26thPARTECIPANT_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RosarioSquitritoOnly24th,25thAnd26thPARTECIPANT_1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label>THINGS</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

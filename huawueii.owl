@@ -1,0 +1,1385 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:label>HAS SITE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENTED_BY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ADRESS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BRANDS_REPRESENTED">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CATEGORY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONNECTIONS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#EXIT_TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FACEBOOK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FOUNDER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IMAGE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#INSTAGRAM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#JOB_TITLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LAUNCH_DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LINKEDIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MAIL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MARKET">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NAME_OF_COMPANY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NUM_EMPLOYEES">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_AREA_OF_ACTIVITY">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#OTHER_INFO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#P.IVA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#POSTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RAG.SOCIALE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ROLE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PEOPLE_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SALES_TURNOVER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SHORT_DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#STATUS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TAGS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TECHNOLOGICAL_STACK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TEL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REFERENCES"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TWITTER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_ANAGRAPHY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#WEBSITE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YOUTUBE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY_INFO"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE">
+        <rdfs:comment>it represent the register of all the people having a role in the company</rdfs:comment>
+        <rdfs:label>AFFILIATED PEOPLE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_MANAGER"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS_SITE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HAS__PARTECIPANT"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CONTACT_PERSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REPRESENT"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COUNTRY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MANAGE"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPANT_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AFFILIATED_PEOPLE"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PARTECIPATE"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REGION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#REGION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SITE">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#LOCATION_OF"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AGILAESRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#AGILAESRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizi e soluzioni innovative per la creazione di valore. Analisi, progettazione e riorganizzazione dei processi e a valle indirizzamento verso le migliori tecnologie e soluzioni utili (digital business trasformation, innovation, strategy, marketing, security, risk consulting).</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sp-ao.shortpixel.ai/client/to_webp,q_gloss…ads/2021/05/AGILAE-logo-rifatto-WHITE-768x287.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conctat@agilae.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consulenza manageriale e direzionale per l&apos;Innovazione</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BBSoFS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BBSoFS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supportare i professionisti dello sport nella programmazione di allenamenti personalizzati secondo le specifiche esigenze motorie rilevate negli atleti;BBSoF Srl- Test biomeccanici sul campo per lo sport e la medicina (bb-sof.com)</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bb-sof.com/wp-content/uploads/2017/06/BBsof-completo-trasp-blue-e1568647470361.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Padova</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BLUEENGINEERING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BLUEENGINEERING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business finalizzato nello sviluppo di progetti d’ingegneria (gestione della produzione) e nel settore dei trasporti (aerospazio, automotive, ferroviario e navale).</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://blue-group.it/wp-content/uploads/2015/06/logo-blue-new-dark.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torino</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@blue-group.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Smart Mobility, Smart Port, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BUZZTECH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#BUZZTECH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attività di Web e Social Media Listening, analisi dei dati, report e approfondimenti, dashboard personalizzati che consentono una migliore fruizione dei dati, sostegno alle crisi</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://images.squarespace-cdn.com/content/v1/58bd…Professional+IT+Consulting+black.png?format=1500w</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, AUDIO ANALYTICS, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CampaniaAerospaceDistrict-DAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#CampaniaAerospaceDistrict-DAC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innovazione in tutta la filiera aerospace</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.daccampania.com/wp-content/uploads/2021/04/dac-campania.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@daccampania.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DINJA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#DINJA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aiutiamo ad implementare con successo le strategie dei clienti in ottica agile (e-commerce, assistenti virtuali, software 4.0)</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dinja.it/wp-content/uploads/2019/03/logo-robot-retina.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polignano a mare (BA)</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@dinja.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ESL, Soluzioni E-commerce, Software 4.0 e Assistenti Virtuali, INTELLIGENZA ARTIFICIALE</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELSECorpSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ELSECorpSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soluzioni B2B e B2B2C a brand, rivenditori, produttori e designer indipendenti; piattaforma Cloud SaaS che mette insieme i processi di vendita al dettaglio front-end come la personalizzazione del prodotto e il commercio 3D virtuale di prodotti possibilmente su misura, con i processi di back-end basati su cloud come la personalizzazione di massa, montaggio virtuale e generazione di ordini per la produzione ibrida intelligente.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://static.wixstatic.com/media/7788a1_3a5d58b1a7824086bb2e438cf0dbbf2f~mv2.png/v1/fill/w_263,h_66,al_c,q_85,usm_0.66_1.00_0.01/7788a1_3a5d58b1a7824086bb2e438cf0dbbf2f~mv2.webp</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@else-corp.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Elysium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Elysium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saas per health care con app Medory</DESCRIPTION>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roma, Milano</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Experenti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APP di realtà aumentata per b2b</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.experenti.eu/wp-content/uploads/2016/10/LogoExperentiBianco-mobile.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Padova</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@experenti.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FinappS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FinappS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le sonde CRNS (cosmic ray neutrons sensing) permettono di contare questi neutroni e quindi di determinare il contenuto d&apos;acqua presente nel terreno, nella biomassa, nella neve.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.finapptech.com/themes/custom/palta/logo.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Pietro in Cariano (VR)</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@finapptech.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FutureCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utilizzare la tecnologia per sviluppare soluzioni efficaci e user-friendly che mettano al primo posto l’esperienza di utilizzo e permettano agli anziani di vivere in maniera sicura e indipendente nella loro abitazione.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.futurecare.it/wp-content/uploads/2021/10/logo_futurecare_v2.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Health Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FuzzyFactory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#FuzzyFactory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">App mediche con intelligenza artificiale</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/uj2ixmbtjdmxxek2zdtr</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@fuzzfactory.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Healt Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HEU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HEU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEU consente ad avvocati, studi legali e dipartimento legale interno di scrivere e gestire i propri contratti e offre l&apos;opportunità di migliorare l&apos;efficacia dei documenti legali utilizzando la metodologia di progettazione legale.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.heulegal.com/wp-content/uploads/2020/11/150-png-HEU-LOGO-DEF_Tavola-disegno-1-copia-10-3.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@heulegal.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HYA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#HYA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stampa digitale e relativa finitura in outsourcing, servizio archiviazione elettronica, piattaforma Web che permette la ricerca e la visualizzazione di file PDF. Servizi a supporto dell’attività di professionisti dei settori giuridico ed economico, dei trasporti, parcheggi e logistica integrata.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.hyagroup.it/wp-content/uploads/2017/02/logo-hya.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agrigento</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@hyagroup.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart Mobility, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Hassisto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Hassisto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hassisto semplifica e riduce i costi dell’assistenza domiciliare automatizzando le operazioni di routine e riducendo l’incidenza dei falsi allarmi con dispositivo wereable.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.hassisto.com/wp-content/uploads/2019/09/logo_hassisto_200_80.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mugnano di Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@hassisto.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Healt Care,Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ITAPROSOLSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ITAPROSOLSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aiuta gli enti e le imprese a gestire il sopralluogo nella procedura delle gare d’appalto, attraverso un servizio digitale, innovativo ed ecosostenibile, il Virtual Inspection</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.itaprosol.it/assets/img/logo_ita2.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caserta</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@itaprosol.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IcubeDigitalVenturesSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#IcubeDigitalVenturesSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soluzioni software, veicolate attraverso piattaforme web, applicazioni mobili o altri ambienti digitali, in tutti gli ambiti ict di potenziale interesse per professionisti, imprese ed enti privati o pubblici prevalentemente per l&apos;implementazione di approcci manageriali e di marketing.</DESCRIPTION>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fisciano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icubedigitalventures@pec.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#InesseCorporation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imbarcazione innovativa che grazie alla propulsione ibrida e alla minima resistenza sull&apos;acqua, dovuta alla sola immersione delle lamine, riduce il consumo di carburante fino al 50%.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.inessecorporation.com/media/logo/inesse_brand_mark_2020.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Castel bolognese (RA)</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@inessecorporation.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care, Green Innovation And Smart Agriculture</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#KCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progetti di rigenerazione urbana, che riunisce professionisti con competenze afferenti diversi ambiti disciplinari per garantire un approccio integrato e attento ai diversi aspetti di qualità e fattibilità dei progetti.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.kcity.it/kcity/wp-content/uploads/2016/04/kcity_logo_180x58.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@kcity.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rigenerazione urbana, Smart Citiy, Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Latitudo40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Latitudo40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aiutiamo le città a pianificare la loro strada verso la neutralità del carbonio (zero carbonio 2030) attraverso un algoritmo proprietario che stima la quantità di CO2 che le infrastrutture verdi urbane sono in grado di catturare</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.latitudo40.com/wp-content/uploads/2021/04/logo-latitudo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@latitudo40.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE E VIDEO ANALYTICS, Green Innovation And Smart Agriculture, Smart Citiy</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Logogramma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Logogramma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizi per l’analisi dei dati linguistici e lo sviluppo di applicazioni digitali finalizzate all’innovazione e all’efficientamento dei processi aziendali, organizzativi e di marketing</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.logogramma.com/wp-content/uploads/2018/11/Logogramma.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vrusso@logogramma.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural language processing con encode base trasformer, INTELLIGENZA ARTIFICIALE, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#M2TESTS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#M2TESTS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il BES TEST (Bone Elastic Structure Test) è nato per rispondere all’esigenza di conoscere meglio la situazione specifica del paziente a rischio di frattura osteoporotica ed implementa un metodo brevettato negli Stati Uniti.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bestest.it/images/m2test_logo.jpg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trieste</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">servizioclienti@besttest.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MindeskSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presentare e rivedere efficacemente i progetti in realtà virtuale, design e ingegnerizzazione dei prodotti.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://mindeskvr.com/wp-content/uploads/2021/02/Artboard-1-copy-6-copia-24.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Francisco</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hello@mindeskvr.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MoiCompositesS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#MoiCompositesS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecnologia di stampa 3D brevettata, Continuous Fiber Manufacturing (CFM) che può essere utilizzatizzato in vari mercati.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@moi.am</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care, Smart Mobility, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NabacomSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NabacomSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azienda commerciale impegnata nel settore ICT e per operatori delle telecomunicazioni, reti, sicurezza e multimedia. Creazione di un nuovo prodotto per ospedali: un sistema per supportare le diagnosi mediche e le terapie, attraverso un algoritmo di diagnostica delle immagini e di dati clinici attraverso MATLAB.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nabacom.it/wp-content/uploads/2014/06/nabacom3.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@nabacom.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NablawaweSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NablawaweSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizi di R&amp;S (progettazione, analisi numeriche, test sperimentali e software) per nuovi prodotti ed ottimizzazione processi; soprattutto per mezzi di trasporto</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nablawave.com/wp-content/uploads/2020/…go-definitivissimo-ORIZZONTALE-e1599835425323.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Padova</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@nablawave.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI INTELLIGENZA ARTIFICIALE, Green Innovation And Smart Agriculture, Smart Mobility, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextonS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NextonS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applicazioni esterne come servizi abilitati basati su sensori, utilizzando la tecnologia wireless.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nextonideas.com/wp-content/uploads/2021/04/nexton_logo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torino</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@nextonideas.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Green Innovation And Smart Agriculture, Smart Citiy</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NotredameSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NotredameSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prodotti con elevate performaces ed a basso impatto ambientale per ridurre lo spreco energetico, applicabili anche in diversi settori industriali. Realizzazione film protettivi, test e analisi chimiche.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.notredamesrl.com/images/logo_bucato_piccolo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cosenza</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROMETE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PROMETE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attività di R&amp;D e nella potenzialità legata alla introduzione sul mercato di nuove idee della ricerca, con l’obiettivo di anticipare nuove opportunità di business in selezionati mercati di nicchia. Misurazione della qualità dell&apos;aria; misurazione e monitoraggio radon; misurazione e schermaggio dei campi elettromagnetici a bassa frequenza; misure c/terzi per il controllo di qualità della produzione.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.promete.it/img/logo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promete@promete.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Healt Care, Green Innovation And Smart Agriculture</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PinBike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#PinBike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Permette ai cittadini di ricevere fra i 20 e i 25 centesimi per km nelle tratte casa/scuola e casa/lavoro e fino a 4 centesimi nelle tratte generiche effettuate all&apos;interno del perimetro urbano in bici.Pin Bike monitora il traffico urbano e incentiva il commercio locale, dato che il buono economico elargito al cittadino può essere speso esclusivamente nelle attività commerciali della città.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pinbike.it/wp-content/uploads/2018/07/pinbike-logo-orizzontale-animato.gif</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bari</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@pin.bike</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture,Smart Citiy, Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ProjectLABSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ProjectLABSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;azienda si avvale dell&apos;utilizzo di software specialistici, nello specifico Unigraphics Nx; TeamCenter; VisMockup; e Catia V5; e delle migliori attrezzature in modo da seguire tutte le fasi del lavoro dal progetto alla prototipazione veloce, soprattutto nel campo automitive; soluzioni software e hardware per tecnologia Rfid ed implementazione impianti domotici.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.plabsrl.it/images/logo316.jpg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomigliano d&apos;Arco</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@plabsrl.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Rawstone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Rawstone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piattaforma Saas per aziende con formula Pay x Use, servizi di gamification per clienti</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.rawstone.it/wp-content/uploads/2020/05/logo-rawstone.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caserta</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keepintouch@rawstone.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RedAndBlue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#RedAndBlue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fornisce servizi di CyberSecurity avanzata in eco-sostenibilità per il proprio cliente, valutando l’esigenza di un percorso di security istanziato su di lui e sviluppa applicazioni di Intelligenza Artificiale per l’automazione dei processi complessi</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://redbluesrl.com/wp-content/uploads/2021/07/RedBlue1-02.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@redbluesrl.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ReliefS.R.L. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#ReliefS.R.L.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un innovativo sfintere endo-uretrale per il trattamento dell&apos;incontinenza urinaria da stress</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.reliefsrl.com/wp-content/uploads/2019/08/relief-logo@2x.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pontedera (PI)</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inso@reliefsrl.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMINIGSRL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SOFTMINIGSRL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligenza artificiale per la progettazione di nuovi farmaci e nuovi materiali; mercato farmaceutico e e-healt per monitorare attivià cardiache e del cervello</DESCRIPTION>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salerno</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Health Care</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SPHAERA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SPHAERA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telecamere che sono in grado di analizzare i dati di ogni singola attività sportiva raccogliendo e dati statistici molto specifici ed avanzati.</DESCRIPTION>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roberto.marseglia@footballaigent.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, VIDEO ANALYTICS, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Serviloo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Serviloo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizi di pulizia della casa, pulizia degli appartamenti e pulizia degli uffici</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://serviloo.it/wp-content/uploads/2021/01/cropped-logo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Novara</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@serviloo.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SmartFluidPower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#SmartFluidPower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulazione di componenti e sistemi nel mondo dell’oleodinamica; testare virtualmente diversi design e combinazioni consente la verifica funzionale del componente o del sistema e l’ottimizzazione delle sue prestazioni, e di ridurre il numero di prototipi fisici e test sperimentali</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://smart.fluidpower.it/files/2018/04/cropped-logo_new4.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modena</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@smart.fluidpower.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Soonapse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Soonapse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sistema di irrigazione intelligente che conosce l’impronta idrica di ciascun terreno, con la coltura presente in quel momento (o senza coltura, nei periodi precedenti la semina), analizza le fasi fenologiche e rileva costantemente il bilancio idrico del suolo.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.soonapse.com/wordpress/wp-content/uploads/2015/12/logo_soonapse.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roma</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@soonapse.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI INTELLIGENZA ARTIFICIALE,Green Innovation And Smart Agriculture, Smart Citiy</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TecnoCapital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TecnoCapital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizi di consulenza nell’ambito dell’efficienza energetica, guidando i clienti nell’adozione di un modello green e al conseguimento degli obiettivi dell’Agenda 2030</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tecnosrl.it/assets/front/img/60bf5e57a6452.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commerciale@tecnosrl.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheThinkingClouds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TheThinkingClouds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esperienze conversazionali su misura del cliente andando oltre il classico chatbot.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.thethinkingclouds.com/wp-content/uploads/2018/07/newlogottc_1.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benevento</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@thethinkingclouds.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE&quot;, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#TolemaicaSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificazione legale istantanea ed automatica di dati e luogo per immagini e audio attraverso smartphone e altri devices.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.tolemaica.it/assets/images/tolemaica-marchio-claim.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napoli</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@tolemaica.it</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AUDIO E VIDEO ANALYTICS, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Urbana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Urbana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soluzioni IoT che rappresentano un elemento competitivo, supportano la trasformazione digitale e l&apos;uso sostenibile delle risorse.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://urbanasmart.com/wp-content/uploads/2020/08/Urbana-Logo2020-White.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mestre</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@urbanasmart.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Green Innovation And Smart Agriculture, Smart Citiy</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Volvero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Volvero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volvero è un’app che consente ai proprietari di veicoli (auto, moto, camper, furgoni) di condividerli a coloro che ne cercano uno per le proprie esigenze.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn-akope.nitrocdn.com/pfeOiuPENfzIKIIpcYu…ee8ef/wp-content/uploads/2019/06/logo-volvero.svg</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@volvero.com</MAIL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YouAreMyGuide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YouAreMyGuide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligenza Artificiale per il Marketing; trova nuovo pubblico e lo coinvolge con una strategia di contenuti efficace.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://ghostwriter.ai/wp-content/uploads/2020/06/ghost-250x80-1.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torino</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, AUDIO ANALYTICS, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YoubiquoSrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#YoubiquoSrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progetta, sviluppa e produce dispositivi per le aziende che desiderano beneficiare dell&apos;elettronica indossabile per Realtà Aumentata e Intelligenza Artificiale nel campo Industry 4.0.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.youbiquo.eu/wp-content/uploads/2018/11/youbiquo-knowledge-to-wear.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cava de Tirreni</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@youbiquo.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Zakeke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Zakeke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trasforma qualsiasi articolo nel tuo negozio in un prodotto personalizzabile con 2D, 3D e AR in tempo reale</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.zakeke.com/wp-content/uploads/elementor/thumbs/logo-350x100px-p2ss8s4r7eq359rnk2lxyzuxb6297f3na0q4ywh3c4.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#eProInn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veicoli solari ibridi</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.eproinn.com/wp-content/uploads/2018/04/Logo-eProInn-scontornato.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fisciano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@eproinn.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#iMEMS-Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#iMEMS-Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensori di movimento per diversi settori</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://static.wixstatic.com/media/b28ddd_848bf841399549c19cfd5410db9272f4~mv2.png/v1/fill/w_480,h_157,al_c,q_85,usm_0.66_1.00_0.01/imems_technology_logo_blue-tr_edited.webp</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lenola</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@imems-techology.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Green Innovation And Smart Agriculture, Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#110Laude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#110Laude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Servizio di consulenza strategico-finanziaria ad alta tecnologia che, attraverso la raccolta e il monitoraggio costante dei dati, analizza la salute finanziaria delle aziende con moderne tecniche di intelligenza artificiale (machine e deep learning)</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://lirp.cdn-website.com/cb9dea69/dms3rep/multi/opt/logo-definitivo-x-web-01-1238c694-1920w.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campobasso</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@110laude.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INTELLIGENZA ARTIFICIALE, Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#221e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#221e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensori che offrono una soluzione compatta, precisa, e versatile per una varietà di settori</DESCRIPTION>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albano terme (PD)</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@221e.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SENSORI, Green Innovation And Smart Agriculture, Smart Mobility</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Exteleon(Pellegrini) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#Exteleon(Pellegrini)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prodotti tecnologici, sviluppati per supportare il settore dell’Education nell’era digitale, che garantiscono un&apos;esperienza multi canale e personalizzata per migliorare l&apos;accessibilità dei corsi e servizi di Istituti ed aziende nei confronti degli studenti e degli utenti nel mercato cinese. I prodotti sviluppati sono un Mini Program su WeChat e una piattaforma e-learning su infrastruttura Tencent Cloud.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.assintel.it/wp-content/uploads/avatars/12509/60c9b222ced95-bpfull.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">davide.pellegrini@exteleon.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry 4.0</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NewElectricAicraftEngines–GSISrl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#NewElectricAicraftEngines–GSISrl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alber/ontologies/2021/11/untitled-ontology-4#COMPANY"/>
+        <DESCRIPTION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sviluppare e produrre i più grandi propulsori aeronautici alimentati esclusivamente da energia elettrica, in grado di erogare tutta la potenza necessaria per ogni dimensione e tipo di aereo.</DESCRIPTION>
+        <IMAGE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://neae-gsi.com/resources/images/nav_logo.png</IMAGE>
+        <LOCATION rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caserta</LOCATION>
+        <MAIL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@neae-gsi.com</MAIL>
+        <TAGS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Innovation And Smart Agriculture</TAGS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label>THINGS</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
